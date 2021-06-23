@@ -1,0 +1,44 @@
+table {
+
+    border-spacing: 0;
+    max-width: 90%;
+    margin: auto;
+    border: 7px double black;
+}
+
+td, th {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: .5em 1em
+}
+
+td:first-child{
+    font-family: Malik, serif;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+td:last-child{
+    font-size: 1.1em;
+    color: darkgrey
+}
+
+
+thead {
+    font-family:  Copperplate, "Copperplate Gothic Light", serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px rgb(255, 153, 0);
+    color: black;
+}
+
+tbody tr:nth-child(2n+1){
+    background-color: #8b6f28;
+}
+
+caption{
+    margin-top: 10px;
+    caption-side: bottom;
+    font-size: 1.3em;
+    font-style: italic;
+}

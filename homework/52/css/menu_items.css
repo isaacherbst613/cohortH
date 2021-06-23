@@ -1,16 +1,18 @@
 html{
-    background-color: gray;
-    text-align: center;
+    background-image: url(/52/images/brick-wall.png);
+    background-color: #54441b;
 }
+
 body{
-     background-color: rgb(187, 112, 15);
-     width: 90%;
-     margin: auto;
-     border-width: 10px;
-     border-color: #ff8500;
-     border-radius: 25px;
-     border-style: solid;
-} 
+    background-image: url(/52/images/grunge-wall.png);
+    background-color: #54441b;
+    border-width: 10px solid #54441b;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 2em;
+}
 h2{
     font-family:  Copperplate, "Copperplate Gothic Light", serif;
     font-size: 2em;
@@ -21,20 +23,67 @@ p{
     font-size: 1.5rem;
     font-family:cursive;
 }
-nav{
-    text-align: end;
-    font-size: 1.5em;
-    margin-right: 1em;
+.social img{
+    width: 25%;
+    margin-top: 30px;
 }
+
+nav, .social{
+    height: 900px;
+    width: 9%;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav{
+    padding-top: 3em;
+    left: 0px;
+}
+
+.social{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding-top: 30%;
+    font-family: comfortaa, 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.social p{
+    padding-top: 15px;
+}
+
+li a {
+    display: block;
+    margin: 1em; 
+    background-color: #644f1b;
+    border: 1px solid rgb(255, 153, 0); 
+    box-sizing: border-box;  
+    padding: 10px;
+    border-radius: 10px;
+    transition:all .7s ease-in-out;
+    overflow: hidden;
+}
+
 a:link{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: comfortaa, 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: black;
     text-decoration: none;
 }
+
 a:visited{
-    color: rgb(60, 25, 68)
+    color: rgb(179, 155, 0)
 }
 a:hover{
-    text-decoration: underline;
-    font-weight: bold;
+    color:rgb(255, 153, 0);
+}
+
+li a:hover{
+    background:black;
+    box-shadow: 0px 0px 2px 2px rgb(255, 153, 0);
 }

@@ -1,53 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
 html{
     background-image: url(/52/images/brick-wall.png);
     background-color: #54441b;
@@ -127,7 +77,8 @@ div{
 
 nav, .social{
     height: 900px;
-    width: 9%;
+    width: 10%;
+    box-sizing: border-box;
     position: fixed;
     top: 0px;
     overflow: hidden;
@@ -145,10 +96,10 @@ nav{
     position: fixed;
     top: 0px;
     right: 0px;
-    padding-top: 30%;
+    padding-top: 450px;
     font-family: comfortaa, 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .social p{
@@ -157,11 +108,11 @@ nav{
 
 li a {
     display: block;
-    margin: 1em; 
+    margin: 1em .8em; 
     background-color: #644f1b;
     border: 1px solid rgb(255, 153, 0); 
     box-sizing: border-box;  
-    padding: 10px;
+    padding: 10px 7px;
     border-radius: 10px;
     transition:all .7s ease-in-out;
     overflow: hidden;
