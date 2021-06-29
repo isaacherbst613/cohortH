@@ -29,18 +29,18 @@
     <h3>Kindly let us know about your experience</h3>
 
     <form action="feedback.php" method="post">
-        <label><input name="fName" placeholder="First Name" required></label>
+        <label><input class="fillable" name="fName" placeholder="First Name" required></label>
 
-        <label><input name="lName" placeholder="Last Name" required></label>
+        <label><input class="fillable" name="lName" placeholder="Last Name" required></label>
 
-        <label><input type="email" name="email" placeholder="email" required></label>
+        <label><input class="fillable" type="email" name="email" placeholder="email" required></label>
 
-        <label><input type="text" name="subject" placeholder="Subject" maxlength="25" required></label>
+        <label><input class="fillable" type="text" name="subject" placeholder="Subject" maxlength="25" required></label>
 
-        <label><textarea name="comment" rows="7" placeholder="Comment (<260 characters)" maxlength="260" required></textarea></label>
+        <label><textarea class="fillable" name="comment" rows="7" placeholder="Comment (<260 characters)" maxlength="260" required></textarea></label>
        
         <h6>Date visited</h6>
-        <label><input type="date" name="date" required></label>
+        <label><input class="fillable" type="date" name="date" required></label>
        
         <h6>Please rate your overall experience</h6>
         <label><input type="range" id="rate" name="rating" min="1" max="5" value="3"></label>

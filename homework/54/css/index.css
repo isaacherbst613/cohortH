@@ -1,10 +1,10 @@
 html{
-    background-image: url(/52/images/brick-wall.png);
+    background-image: url(/54/images/brick-wall.png);
     background-color: #54441b;
     font-size: 1.2em;
 }
 body{
-    background-image: url(/52/images/grunge-wall.png);
+    background-image: url(/54/images/grunge-wall.png);
     background-color: #54441b;
     border-radius: 30px;
     text-align: center;
@@ -209,4 +209,4 @@ input{
     text-align: center;
     font-size: 1em;
     height: 3em;
-}
+}  
