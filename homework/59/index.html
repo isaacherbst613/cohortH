@@ -17,19 +17,19 @@
             margin-top: 57px;
         }
 
-        #table_wrapper {
+        /* #table_wrapper {
             overflow-y: auto;
-        }
+        } */
 
         .table {
             min-width: 700px;
         }
 
-        .tbody td:last-of-type,
+        /* .tbody td:last-of-type,
         thead th:last-of-type,
         tfoot td:last-of-type {
             color: red;
-        }
+        } */
     </style>
 </head>
 
@@ -117,7 +117,7 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, aliquam quisquam repellendus, cumque odio
             doloremque, fuga ut quasi obcaecati voluptas dolores architecto! Molestias, quaerat porro.</p>
 
-        <div id="table_wrapper">
+        <div class="table-responsive">
             <table class="table table-striped table-hover table-bordered caption-top ">
                 <caption class="">Profits - By Quarter</caption>
                 <thead class="text-center">
@@ -135,7 +135,7 @@
                         <td>$153,222</td>
                         <td>$544,765</td>
                         <td>$433,555</td>
-                        <td>$1,623,666</td>
+                        <td class="text-danger">$1,623,666</td>
                     </tr>
                     <tr>
                         <th class="text-center" scope="row">2018</th>
@@ -143,7 +143,7 @@
                         <td>$153,222</td>
                         <td>$744,765</td>
                         <td>$933,545</td>
-                        <td>$2,623,554</td>
+                        <td class="text-danger">$2,623,554</td>
                     </tr>
                     <tr>
                         <th class="text-center" scope="row">2019</th>
@@ -151,7 +151,7 @@
                         <td>$153,222</td>
                         <td>$844,765</td>
                         <td>$433,335</td>
-                        <td>$3,623,621</td>
+                        <td class="text-danger">$3,623,621</td>
                     </tr>
                     <tr>
                         <th class="text-center" scope="row">2020</th>
@@ -159,7 +159,7 @@
                         <td>$1,153,222</td>
                         <td>$1,544,765</td>
                         <td>$1,433,555</td>
-                        <td>$6,654,322</td>
+                        <td class="text-danger">$6,654,322</td>
                     </tr>
                     <tr>
                         <th class="text-center" scope="row">2021</th>
@@ -167,12 +167,12 @@
                         <td>$1,153,762</td>
                         <td>$1,544,735</td>
                         <td>$2,433,555</td>
-                        <td>$7,623,698</td>
+                        <td class="text-danger">$7,623,698</td>
                     </tr>
                 </tbody>
                 <tfoot class="text-end">
                     <td colspan="5">Total</td>
-                    <td>$20,434,544</td>
+                    <td class="text-danger">$20,434,544</td>
                 </tfoot>
             </table>
         </div>
