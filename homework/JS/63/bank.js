@@ -4,7 +4,7 @@
     function account(){
             return{ 
             balance: 0,
-            performTransaction: function (amnt){
+            performTransaction: function (amnt){ /* == performTransaction(amnt){ */
                 this.balance += amnt;
                 console.log('your new balance is $' + this.balance);
             }
