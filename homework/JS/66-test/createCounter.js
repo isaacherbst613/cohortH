@@ -6,8 +6,8 @@ window.app = (function(module){
         let count = 0;
         counters++;
         return{
-            count : count,
-            increment : function() {this.count++;}
+            count : () => count,
+            increment : () => count++
         };
     };
     

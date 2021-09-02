@@ -17,7 +17,7 @@
     } 
     
     console.log(window.app.getCount());
-    console.log(count1.count);
-    console.log(count2.count);
+    console.log(count1.count());
+    console.log(count2.count());
 
 }());
