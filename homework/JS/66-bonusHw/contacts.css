@@ -1,0 +1,86 @@
+ body{
+     max-width: 80%;
+     margin: auto;
+     padding-top: 100px;
+     font-family: 'Comfortaa', cursive;
+ }
+ 
+ .tblwrap{
+    width: 610px;
+    height: 700px;
+    margin: auto;
+    overflow-y: scroll;
+ }
+ table{
+    width: 600px;
+    margin: auto;
+    box-shadow: 1px 1px 3px 2px;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+}
+td, th{
+    border: 2px solid rgb(80, 4, 4);
+    padding: 1em;
+}
+th{
+    background-color: rgb(132, 253, 253);
+}
+tr:nth-child(2n+1){
+    background-color: rgb(255, 255, 220);;
+}
+tr:nth-child(2n){
+    background-color: rgb(255, 220, 255);;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+table th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+#add{
+    margin: auto;
+    padding: 1em;
+    border-radius: 4px;
+    background-color: cadetblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label{
+    display: inline-block;
+    width: 5em;
+}
+#contactForm{
+    position: absolute;
+    background-color: lightcyan;
+    padding: 3em;
+    box-sizing: border-box;
+    width: 23em;
+    height: 15em;
+    top: 40%;
+    left: 50%;
+    margin-top: -5em;
+    margin-left: -9em;
+    box-shadow: 1px 2px 2px 2px;
+    display: none;
+}
+
+.formGroup{
+    text-align: center;
+    margin:5px auto;
+}
+
+td img:hover{
+    transition: .5s;
+    transform: scale(1.2);
+}

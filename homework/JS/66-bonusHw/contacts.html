@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contacts.css">
+    
+</head>
+<body>
+    <button id="add">add contact</button>
+    <div id="tblwrap">
+        <table >
+            <thead>
+                <tr>
+                    <th>first</th>
+                    <th>last</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th><img src="trash.png" width="20px" alt="delete"></th>
+                </tr>
+            </thead>
+            <tbody id="ct">
+                <tr>
+                    <td colspan="5">no contacts yet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form id="contactForm">
+        <div class="formGroup">
+            <label for="first">first:</label>
+            <input id="first" required>
+        </div>
+        <div class="formGroup">
+            <label for="last">last:</label>
+            <input id="last" required>
+        </div>
+        <div class="formGroup">
+            <label for="email">email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="formGroup">
+            <label for="phone">phone: </label>
+            <input type="text" id="phone" required>
+        </div>
+        <div class="formGroup">
+            <button id='button'>submit</button>
+            <button id='cancel'>cancel</button>
+        </div>
+        
+
+    </form>
+    <script src="contacts.js"></script>
+</body>
+</html>

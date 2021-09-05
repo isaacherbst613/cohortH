@@ -8,28 +8,30 @@
 
     <style>
         #tblwrapper{
-            width:300px;
+            width:350px;
             margin: auto;
-            border-radius: 5px;
+  
             display: block;
             overflow-y: auto;
-            max-height: 250px;
+            max-height: 300px;
             text-align: center;
         }
         table{
             border-collapse: collapse;
             margin: auto;
             box-sizing: border-box;
-            width: 270px;
+            width: 330px;
             cursor: pointer;
         }
         td {
-            border: 2px solid black; 
+            border: 5px solid darkgray; 
         }
         th{
             position: sticky;
-            background-color: white; /*should dynamicaly change to match backround color*/
             top: 0;
+            background-color: white;
+            color: black;
+            border: 5px solid darkgray;
         }
         th:nth-of-type(1), td:nth-of-type(1){
             width:65%;
@@ -44,6 +46,7 @@
     <button id="rcd-btn">record</button>
     <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nisi exercitationem explicabo eaque inventore officia, dolorem iusto voluptates reiciendis rem distinctio ut aliquid, nihil veniam corporis porro earum nostrum dolor.</p>
 
+    
     <div id="tblwrapper">
         <table id="table">
             <thead>
@@ -51,10 +54,7 @@
                 <th>time</th>
             </thead>
             <tbody>
-                <tr>
-                    <td>rgb(255,255,255)</td>
-                    <td id="now"></td>
-                </tr>
+                
             </tbody>
         </table>
     </div>
