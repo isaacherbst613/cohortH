@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            position: absolute;
+            background-color: lightcyan;
+            padding: 2em;
+            box-sizing: border-box;
+            width: 23em;
+            height: 15em;
+            top: 2px;
+            left: 50%;
+            margin-left: -9em;
+            border: 2px solid black;
+            border-radius: 3px;
+            text-align: center;
+        }
+        #text{
+            width: auto;
+            height: 8em;
+            background-color: aliceblue;
+        }
+       #ok{
+           padding: 5px 2em;
+       }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="text"></div>
+        <button id="ok">ok</button>   
+    </div>   
+    <label for="input">add. info: </label>
+    <input type="text" id="info" required>
+    <button id="submit" type="submit">submit</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
