@@ -12,8 +12,10 @@
     }
 
     let multi = x => x * 2;
-    
+
     console.log(theArray);
     console.log(myMap(theArray, multi));
     console.log(theArray);
 }());
+
+// SL - nice

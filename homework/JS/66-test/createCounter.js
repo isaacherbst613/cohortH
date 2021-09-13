@@ -10,7 +10,10 @@ window.app = (function(module){
             increment : function() {this.count++;}
         };
     };
-    
+
     return module;
 
 }(window.app || {}));
+
+// SL - nice
+// SL - grade - 99
