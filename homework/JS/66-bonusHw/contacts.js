@@ -54,13 +54,13 @@
     });
 
     contactTable.addEventListener('click', event => {
-        //if click in <img = delete> get it's <td>s parentElement.rowIndex
+        //if clicked in <img = delete> get it's <td>s parentElement.rowIndex
         const clickRow = event.target.closest('td').parentElement.rowIndex;
         console.log(clickRow);
         if (event.target.parentElement.cellIndex === 4){
             contactTable.deleteRow(clickRow-1);
             contacts.splice(clickRow-1,1);
-            if(contacts.length === 0){
+            if(!contacts.length){
                 const temp = contactTable.insertRow();
                 temp.innerHTML= "<td colspan='5'>no contacts yet</td>";
             }
