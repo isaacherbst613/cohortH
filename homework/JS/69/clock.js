@@ -44,6 +44,7 @@ window.clock = (function () {
         let h12 = h - 12 <= 0 ? h : (h-12);
         const ps = pad(s);
         const pm = pad(m);
+        //String(s).padStart(2,"0")); built in function 
         const tm = `${h12}:${pm}:${ps} ${amPm}`;
         time.innerText = tm;
     }, 1000);

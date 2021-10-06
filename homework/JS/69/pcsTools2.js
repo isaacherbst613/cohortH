@@ -29,7 +29,7 @@ window.pcs = function (id) {
             return this;
         },
         flash: function (len, speed) {//len in seconds, speed in 10th of seconds
-            const currentclr = getComputedStyle(theElem)["backgroundColor"];
+            const currentclr = getComputedStyle(theElem).backgroundColor;
             const clrs = ["red", "green", "blue"];
             let i = 0;
             const int = setInterval(() => {
