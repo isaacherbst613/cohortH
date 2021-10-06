@@ -15,11 +15,11 @@ window.messageBox = (function () {
     modal.style.width = "100%";
     modal.style.height = "100%";
     modal.style.backgroundColor = "grey";
-    modal.style.opacity = ".5";
+    modal.style.opacity = ".3";
     document.body.appendChild(modal);
 
 
-    function show(msg, array, callback, mdl) {
+    function show(msg, array, callback, mdl = true) {
         const div = document.createElement('div');
         const span = document.createElement('span');
         span.innerHTML = msg;
@@ -60,7 +60,7 @@ window.messageBox = (function () {
         document.body.appendChild(div);
 
         div.style.position = "absolute";
-        div.style.backgroundColor = "lightcyan";
+        div.style.backgroundColor = "rgb(180,255,180)";
         div.style.padding = "3em";
         div.style.boxSizing = "border-box";
         div.style.width = `${width}px`;
