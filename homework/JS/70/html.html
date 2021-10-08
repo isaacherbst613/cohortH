@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #enable{
+            width: auto;
+            position: absolute;
+            box-sizing: border-box;
+            padding: 1em;
+            top: 2em;
+            left: 50%;
+            margin-left: -5em;
+            box-shadow: 1px 2px 2px 2px;
+            border-radius: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+        form {
+            width: max-content;
+            position: absolute;
+            padding: 3em;
+            box-sizing: border-box;
+            top: 45%;
+            left: 50%;
+            margin-top: -5em;
+            margin-left: -9em;
+            box-shadow: 1px 2px 2px 2px;
+            border-radius: 4px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        .block {
+            margin: 10px auto;
+        }
+
+        label {
+            display: inline-block;
+            width: 5em;
+        }
+
+        button {
+            padding: .5em 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="enable">
+        <label for="captcha1">enable form </label>
+        <input type="checkbox" name="captcha1" id="checkbox2">
+    </div>
+    <form id="form">
+        <div id="nameBlock" class="block">
+            <label for="">Name: </label>
+            <input type="text" id="name" required>
+        </div>
+        <div id="addBlock" class="block">
+            <label for="">Address: </label>
+            <input type="text" id="add">
+        </div>
+        <label for="">captcha </label>
+        <input type="checkbox" name="captcha" id="checkbox">
+        <button id="submit">submit</button>
+    </form>
+
+
+    <script src="popup.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+</body>
+
+</html>
