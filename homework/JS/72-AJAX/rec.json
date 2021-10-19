@@ -1,0 +1,40 @@
+[
+    {
+        "name":"challah",
+        "ingredients":
+        {
+        "ing1":"water",
+        "ing2":"flour",
+        "ing3":"eggs",
+        "ing4":"salt",
+        "ing5":"sugar",
+        "ing6":"yeast"
+        },
+        "img":"pics/challah.jpg",
+        "directions":"challah ipsum, dolor sit amet consectetur adipisicing elit. Natus suscipit sed tenetur ipsum aperiam! Rem ab vero, eius sequi dolor officia nam debitis assumenda. Enim ut quam fugiat ea cupiditate."
+    },
+    {
+        "name":"pizza",
+        "ingredients":
+        {
+            "ing1":"dough",
+            "ing2":"tomato sauce",
+            "ing3":"cheese"   
+        },
+        "img":"pics/pizza.jpg",
+        "directions":"pizza Natus suscipit sed tenetur ipsum aperiam! Rem ab vero, eius sequi dolor officia nam debitis assumenda. Enim ut quam fugiat ea cupiditate."
+    },
+    {
+        "name":"scrambled eggs",
+        "ingredients":
+        {
+        "ing1":"eggs",
+        "ing2":"oil",
+        "ing3":"cheese",
+        "ing4":"salt",
+        "ing5" :"spices"
+        },
+        "img":"pics/eggs.jpg",
+        "directions":"eggs Natus suscipit sed tenetur ipsum aperiam! Rem ab vero, eius sequi dolor officia nam debitis assumenda. Enim ut quam fugiat ea cupiditate."
+    }
+]

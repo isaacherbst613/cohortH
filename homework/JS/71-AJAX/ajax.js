@@ -4,11 +4,11 @@
     $('#btn').click(() => {
         $('body').addClass('spinner');
         fetch($('#input').val())
-            .then(responce => {     
-                if (!responce.ok) {
-                    return `<p>${responce.status}, ${responce.statusText}</p>`
+            .then(response => {     
+                if (!response.ok) {
+                    return `<p>${response.status}, ${response.statusText}</p>`
                 }else{
-                    return responce.text()
+                    return response.text()
                 }
             })
             .then(r => { 
