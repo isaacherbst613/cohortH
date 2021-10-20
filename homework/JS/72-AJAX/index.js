@@ -7,7 +7,25 @@
     const ingreds = $('#ings');
     const dirs = $('#direc');
     const cardBtm = $('#bottom');
+    populate("recipeList.json");
     fetcher("rec.json");
+
+    async function populate(url){
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`${e.status} ${e.statusText}`);
+            }
+            const recipes = await response.json();
+            Object.keys(recipes[0]).forEach(key => {
+                recipeList.append(`<option>${recipes[0][key]}</option>`)
+                console.log(recipes[0][key])
+            });
+
+         } catch (e) {
+            console.error(e)
+        }
+}
 
     async function fetcher(url) {
         try {
