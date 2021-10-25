@@ -1,0 +1,20 @@
+[
+    {
+        "name": "El Hanaar",
+        "url": "videos/el-hanaar.mp4",
+        "artist": "Motti Steinmetz",
+        "img": "videos/kiddos.jpg"
+    },
+    {
+        "name": "Ivri",
+        "url": "videos/ivri-short.mp4",
+        "artist": "Benny Friedman",
+        "img": "videos/poster.png"
+    },
+    {
+        "name": "Kol Zman",
+        "url": "videos/kolzman-short.mp4",
+        "artist": "Motti Steinmetz",
+        "img": "videos/modeh.jpg"
+    }
+]
