@@ -14,7 +14,7 @@
         try {
             const response = await fetch(url);
             if (!response.ok) {
-                throw new Error(`${e.status} ${e.statusText}`);
+                throw new Error(`${response.status} ${response.statusText}`);
             }
             const recipes = await response.json();
             Object.keys(recipes[0]).forEach(key => {
@@ -30,7 +30,7 @@
         try {
             const response = await fetch(url);
             if (!response.ok) {
-                throw new Error(`${e.status} ${e.statusText}`);
+                throw new Error(`${response.status} ${response.statusText}`);
             }
             const recipe = await response.json();
             recipeList.change(() => {

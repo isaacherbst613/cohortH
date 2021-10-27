@@ -15,13 +15,13 @@
                     $('#art').text(v.artist);
                 })
         });
-    };
+    }
 
     async function fetcher(url) {
         try {
             const response = await fetch(url);
             if (!response.ok) {
-                throw new Error(`${e.status} ${e.statusText}`);
+                throw new Error(`${response.status} ${response.statusText}`);
             }
             return await response.json();
         } catch (e) {

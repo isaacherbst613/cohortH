@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div id="input">
+        <input type="text" placeholder="search for pics">
+        <button class="btn" id="submit" type="submit">
+            <img src="items/search.png" alt="search" onerror="this.style.display = 'none'">
+        </button>
+    </div>
+    <div id="result"></div>
+    <div id="display">
+        <h2 id="name">No matches have been found</h2>
+        <img alt="alt-pic" id="pic" src="kotel/50938666193_783035017d.jpg">
+        <button class="btn move" id="back"><img src="items/left.png" alt="back"></button>
+        <button class="btn move" id="forward"><img src="items/right.png" alt="next"></button>
+        <div id="bottom">
+            <h3>time-stamp</h3>
+            <p id="date"></p>
+            <h4>photo credit</h4>
+            <p id="credit"></p>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
