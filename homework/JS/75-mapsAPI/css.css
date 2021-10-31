@@ -1,0 +1,100 @@
+        html,
+        body,
+        #map,
+        #sidebar {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .row{
+            /* hack needed to prevent h-scroll on 12 col bootstrap */
+            margin-left: 0px;
+            margin-right: 0px; 
+        }
+
+        #sidebar {
+            box-sizing: border-box;
+            overflow: auto;
+            /* padding-right: 10px; */
+        }
+
+        #input input {
+            font-size: 18px;
+            border: none;
+            width: 87%;
+        }
+
+        #input input:focus-visible {
+            outline: none;
+        }
+
+        #input button {
+            width: 25px;
+            vertical-align: middle;
+            padding: 0;
+        }
+        #input button:focus{
+            box-shadow: none;
+
+        }
+        #input img {
+            width: 25px;
+        }
+        #input button img:hover {   
+            transform: scale(1.2);
+        }
+
+        #input {
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 1px 1px 5px 1px grey;
+            border-radius: 5px;
+            padding: .5em .5em;
+        }
+        #showAll{
+            width: fit-content;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: none;
+        }
+        #showAll:hover{
+            color: #777;
+        }
+        li a{
+            text-align: center;
+        }
+        li a:hover{
+            color: #777 !important;
+        }
+
+        p{
+            width: 95%;
+            height: 100px;
+            overflow: auto;
+        }
+        li img{
+            width: 60%;
+            margin-left: 19%;
+            height: 75px;
+            margin-bottom: 5px;
+            cursor: pointer;   
+        }
+        li img:hover{
+            transform: scale(1.1)
+        }
+
+        *::-webkit-scrollbar {
+            width: 16px;
+          }
+        
+          *::-webkit-scrollbar-track {
+            background: inherit;
+          }
+        
+          *::-webkit-scrollbar-thumb {
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #000000;
+          }
