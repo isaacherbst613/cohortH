@@ -99,8 +99,5 @@
         sidebarLi.empty();
         boundsBtn.hide();
     }
-
-    $('.sidebarImg').click
     
-
 }())
