@@ -14,22 +14,23 @@
 
         }
         print() {
-            console.log(`a ${this.year} ${this.make} ${this.model} in ${this.color} is traveling at ${this.speed}mph`);
+            console.log(`a ${this.year} ${this.color} ${this.make} ${this.model} is traveling at ${this.speed}mph`);
         }
     }
 
-    class Plane {
+    class Plane extends Vehicle {
         constructor(make, model, year, color, passengers) {
-            Vehicle.call(this, make, model, year, color);
+            super(make, model, year, color);
             this.passengers = passengers;
+        }
+        print() {
+            console.log(`a ${this.year} ${this.color} ${this.make} ${this.model} is flying at ${this.speed}mph`);
         }
         go(speed) {
             this.speed = speed;
             console.log(`now Flying at ${speed}mph`);
         }
     }
-    
-    Plane.prototype = Object.create(Vehicle.prototype);
     
 
     const myPlane = new Plane('Boeing', '787', '2022', 'white', '500');
