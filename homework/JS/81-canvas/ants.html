@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            position: absolute;
+            top: 10px;
+            left: 30%;
+            width: 40%;
+            z-index: 1000;
+        }
+        button{
+            position: absolute;
+            top: 20px;
+        }
+        button#fast{
+            left: 20px;
+        }
+        button#slow{
+            left: 80px;
+        }
+        button#default{
+            left: 150px;
+        }
+        #numOfAnts{
+            width: 50px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <label for="color">pick a color: 
+        <input type="color" id="color" required>
+    </label> 
+    <label for="numOfAnts">Amount: </label>
+        <input type="number" name="" id="numOfAnts" value="3" required>
+
+    <input type="submit" value="add ants" id="addAnts">
+    </form>
+
+    <button id="fast">faster</button>
+    <button id="default">default</button>
+    <button id="slow">slower</button>
+
+    <canvas id="canvas"></canvas>
+    <canvas id="food"></canvas>
+
+    <script src="ants.js"></script>
+    <!--script src="ant.js"></script-->
+</body>
+</html>
