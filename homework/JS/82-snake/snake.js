@@ -32,16 +32,30 @@
             this.y = midY - midY % THING_SIZE;
             this.parts = [{ x: this.x, y: this.y }];
             this.direction = 'ArrowRight';
+            this.backwards = 'ArrowLeft'
 
 
             document.addEventListener('keydown', (event) => {
-                switch (event.key) {
-                    case 'ArrowUp':
-                    case 'ArrowDown':
-                    case 'ArrowLeft':
-                    case 'ArrowRight':
-                        this.direction = event.key;
-                        break;
+                console.log(event.key, this.direction);
+                if (event.key !== this.backwards) {
+                    switch (event.key) {
+                        case 'ArrowUp':
+                            this.backwards = 'ArrowDown';
+                            this.direction = event.key;
+                            break;
+                        case 'ArrowDown':
+                            this.backwards = 'ArrowUp';
+                            this.direction = event.key;
+                            break;
+                        case 'ArrowLeft':
+                            this.backwards = 'ArrowRight';
+                            this.direction = event.key;
+                            break;
+                        case 'ArrowRight':
+                            this.backwards = 'ArrowLeft';
+                            this.direction = event.key;
+                            break;
+                    }
                 }
             });
 
@@ -52,7 +66,7 @@
 
             for (let i = 0; i < this.parts.length; i++) {
                 ctx.drawImage(snakeBody, this.parts[i].x, this.parts[i].y, THING_SIZE, THING_SIZE);
-                
+
                 //while your redrawing anyway, you can use this to check if you have hit yourself
                 if (this.x === this.parts[i].x && this.y === this.parts[i].y) {
                     gameOver = true;
@@ -132,7 +146,7 @@
             this.y = this.getRandomNumber(0, canvas.height - 1);
 
             //if the apple is on the snake, re-move it
-            for(let i = 0; i < snake.parts.length; i++) {
+            for (let i = 0; i < snake.parts.length; i++) {
                 if (this.x === snake.parts[i].x && this.y === snake.parts[i].y) {
                     this.move();
                 }
@@ -175,7 +189,7 @@
         }
 
 
-        apple.draw(); 
+        apple.draw();
         snake.move();
         snake.moveBody();
         if (!gameOver) {
