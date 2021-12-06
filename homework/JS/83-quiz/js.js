@@ -1,6 +1,7 @@
 (function () {
     'use strict';
 
+    // SL - why Items not Item? Isnt this representing a single Item?
     class Items {
         constructor(name, total, quantity) {
             this.name = name;
@@ -11,12 +12,14 @@
 
     class Order {
         constructor(customerName, customerAdd, items) {
+            // SL - what is spreading the array you received into a new array accomplishing here?
             this.items = [...items];
             this.customerName = customerName;
             this.customerAdd = customerAdd;
         }
         get total() {
             let total = 0;
+            // SL - not a problem, but why not use forEach?
             for (let i = 0; i < this.items.length; i++) {
                 total += this.items[i].price * this.items[i].quantity;
             }
@@ -32,6 +35,7 @@
         const orders = await response.json();
 
         orders.forEach(order => {
+            // SL - personaly I think orderList is a confusing name for the items going into an order. Sounds like a list of orders....
             let orderList = [];
             order.items.forEach(item => {
                 const orderItems = new Items(item.item, item.total, item.quantity);
@@ -41,13 +45,14 @@
 
 
 
+            // SL - better would be do this separately, after creating all item in a separate function dedictaed to adding to dom rather then mixing it all together
             ///layout html
             const table = document.createElement('table');
             const caption = document.createElement('caption');
             caption.innerHTML = `<h3>${thisOrder.customerName}<br>${thisOrder.customerAdd}</h3>`;
             table.append(caption);
             const thead = document.createElement('thead');
-            thead.innerHTML = `<thead> 
+            thead.innerHTML = `<thead>
                                     <tr>
                                         <th>Items</th>
                                         <th>Price</th>
@@ -84,6 +89,7 @@
 
     getOrders();
 
+    // SL - see toFixed(2)...
     function rightPad(x) {
         if (String(x).includes('.')) {
             if(String(x).split('.')[1].length===1){
@@ -97,3 +103,5 @@
 
 
 }());
+
+// SL - nice - 100
