@@ -4,3 +4,5 @@ homework/.eslintrc.json
 homework/package.json
 homework/package-lock.json
 homework/JS/75-mapsAPI/index.html
+homework/JS/84/node_modules
+homework/JS/85-wp/node_modules
