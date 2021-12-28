@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #select {
+            margin-top: 3em;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #select select {
+            width: 350px;
+            height: 2em;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        #exchange {
+            margin: auto;
+            margin-top: 10em;
+            width: 200px;
+            white-space: pre
+        }
+        #dynamic{
+            display: flex;
+            justify-content: center;
+        }
+        #dynamic div{
+            margin: 3em;
+            width: 200px;
+            padding: 10px;
+            border: solid 1px black;
+            border-radius: 5px;
+            display: table;
+        }
+        #dynamic span{
+            margin: auto 2em;
+        }
+        label{
+            width: 10%;
+            margin-right: 10px;
+            font-size: large;
+            height: 2em;
+            display: table-cell; 
+            vertical-align: middle; 
+        }
+        input{
+            width: 80%;
+            height: 2em;
+            font-size: large;
+            border: 0;
+        }
+        input:focus{
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>CURRENCY EXCHANGE</h2>
+    <div id="select">
+        <select class="country" id="country1">
+            <option id="United States of America" selected>Select Country (default = USA)</option>
+        </select>
+        <span>&#x27fa</span>
+        <select class="country" id="country2">
+            <option id="United States of America" selected>Select Country (default = USA)</option>
+        </select>
+    </div>
+    <div id="exchange">
+        <div id="flabel">USA - USA</div>
+        <div id="forward">$1    =>    $1</div>
+        <br>
+        <div id="blabel">USA - USA</div>
+        <div id="backward">$1    =>    $1</div>
+    </div>
+    <form id="dynamic">
+        <div id="firstFor">
+            <label id="f"></label>
+            <input type="number" id="ff">
+        </div>
+        <span>=</span>
+        <div id="secondBack">
+            <label id="s"></label>
+            <input type="number" id="ss">
+        </div>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="one.js"></script>
+</body>
+
+</html>

@@ -13,7 +13,7 @@ export default class Snake {
         this.snakeHead = snakeHead;
         this.snakeBody = snakeBody;
         this.direction = 'ArrowRight';
-        this.backwards = 'ArrowLeft'
+        this.backwards = 'ArrowLeft';
 
 
         document.addEventListener('keydown', (event) => {

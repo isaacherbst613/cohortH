@@ -22,7 +22,7 @@
             });
 
          } catch (e) {
-            console.error(e)
+            console.error(e);
         }
 }
 
@@ -48,11 +48,11 @@
                 
                 dirs.text(found.directions);
 
-            })
+            });
 
    
         } catch (e) {
-            console.error(e)
+            console.error(e);
         }
     }
 

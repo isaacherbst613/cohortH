@@ -59,4 +59,4 @@
         $('#display').slideUp();
         setTimeout(()=>{changePic()},400);
     }
-}())
+}());
