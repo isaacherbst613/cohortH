@@ -6,17 +6,17 @@
         fetch($('#input').val())
             .then(response => {     
                 if (!response.ok) {
-                    return `<p>${response.status}, ${response.statusText}</p>`
+                    return `<p>${response.status}, ${response.statusText}</p>`;
                 }else{
-                    return response.text()
+                    return response.text();
                 }
             })
             .then(r => { 
                 setTimeout(()=>{
                     $('body').removeClass('spinner');
-                    window.messageBox.show(`<p>${r}</p>`)
-                },2000)                    
-             })
-    })
+                    window.messageBox.show(`<p>${r}</p>`);
+                },2000);                    
+             });
+    });
 
-}())
+}());
