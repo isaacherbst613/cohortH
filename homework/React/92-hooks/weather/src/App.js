@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => {
     console.log('componentDidMount');
     async function getWeather() {
-      const appId = '6c67ce4999ea3f972a853c7529607ed9';
+      const appId = '';
       try {
         const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${state.zip}&appid=${appId}&units=imperial&lang=he`)
         const weatherData = await result.json();
