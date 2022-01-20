@@ -1,0 +1,25 @@
+.header{
+    background-color: #643434;
+    padding-top: 130px;
+    text-align: center;
+    height: 300px;
+    color: white;
+    margin-bottom: 20px;
+}
+#home{
+    cursor: pointer;
+}
+#home:hover{
+    color:rgb(248, 215, 171);
+}
+.card{
+    height: 250px;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px #643434;
+}
+.row>* {
+    margin: 10px;
+    padding: 0;
+}
