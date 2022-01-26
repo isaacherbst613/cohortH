@@ -1,0 +1,7 @@
+.read-more{
+    color: #00bcd4;
+cursor: pointer;
+}
+.read-more:hover{
+    color: #000;
+}
