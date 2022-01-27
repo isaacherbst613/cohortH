@@ -1,0 +1,14 @@
+.dropdown{
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* dropdown button */
+#dropdown{
+    box-shadow: none;
+}
+.dropItem{
+    font-size: small;
+    padding: 10px;
+}
