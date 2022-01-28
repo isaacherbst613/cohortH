@@ -1,0 +1,8 @@
+#container {
+  margin: 10px auto;
+  width: 200px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: aliceblue;
+}

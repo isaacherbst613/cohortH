@@ -1,0 +1,9 @@
+<div id="container" *ngFor="let guy of guys">
+    <h2>{{guy.firstName}} {{guy.lastName}}</h2>
+    <p>Age: {{guy.age}}</p>
+    <div *ngIf="guy.address">Address:
+        <br/>
+        <div>{{guy.address.street}}</div>
+        <div>{{guy.address.city}}, {{guy.address.state}} {{guy.address.zip}}</div>
+    </div>
+</div>
