@@ -1,0 +1,6 @@
+<h2>Choose A Category</h2>
+<select [(ngModel)]="selected" (ngModelChange)="selection()">
+    <!--option hidden>choose one...</option-->
+    <option *ngFor="let category of categories; let i = index" [value]="i" >{{category.type}}</option>
+</select>
+<br>

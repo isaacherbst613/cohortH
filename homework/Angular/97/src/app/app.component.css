@@ -1,0 +1,8 @@
+#root{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;background-color: azure;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 5px; 
+}

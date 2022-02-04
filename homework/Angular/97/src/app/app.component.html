@@ -1,0 +1,5 @@
+<div id="root">
+    <app-selecter [categories]="category" (selectionChanged)="selectionChanged($event)"></app-selecter>
+    <hr>
+    <app-items [selection]="category[selected]"></app-items>
+</div>

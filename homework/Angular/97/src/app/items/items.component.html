@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let item of selection.items">
+        {{item.name}} {{item.price | currency:'USD'}}
+    </li>
+    <li *ngIf="!selection.items.length">
+        No items in this category
+    </li>
+</ul>
