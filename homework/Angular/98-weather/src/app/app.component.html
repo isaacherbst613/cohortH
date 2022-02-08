@@ -1,0 +1,6 @@
+<form>
+    <label>Enter zip:</label>
+    <input type="text" name="zip" [(ngModel)]="zip" (ngModelChange)="zipChanged()" />
+</form>
+
+<app-weather-display [weatherDeets]="theWeather | async"></app-weather-display>
