@@ -1,7 +1,7 @@
 <ng-container *ngIf="weatherDeets; else noWeather">
 <div>The weather in {{weatherDeets?.place}} is</div>
 <img [src]="weatherDeets?.icon">
-<div>{{weatherDeets?.details.temp}}</div>
+<div>{{weatherDeets?.details?.temp}}</div>
 <br>
 <div>Shkia is at {{toTime()}}</div>
 
