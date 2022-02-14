@@ -1,0 +1,3 @@
+<div *ngFor="let blogInfo of blogs | async" class="blog">
+    <app-user-info [blogInfo]="blogInfo"></app-user-info>
+  </div>

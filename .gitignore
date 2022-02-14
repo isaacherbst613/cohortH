@@ -4,5 +4,5 @@ homework/.eslintrc.json
 homework/package.json
 homework/package-lock.json
 homework/JS/75-mapsAPI/index.html
-homework/JS/*/node_modules
-
+**/node_modules/
+.vscode/
