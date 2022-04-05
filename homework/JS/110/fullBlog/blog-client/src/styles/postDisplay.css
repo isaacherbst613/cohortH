@@ -1,0 +1,16 @@
+#Post-holder{
+    margin-top: 50px;
+    width: 75%;
+    margin-left: auto;
+}
+
+.title{
+    text-transform: capitalize;
+    margin: 30px;
+}
+
+#comments-holder{
+    margin-top: 50px;
+    width: 60%;
+    margin-left: auto;
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #64343469 
+}
+
+.main-container {
+    height: 600px;
+    width: 330px;
+    border-radius: 12px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px
+}
+
+#loginBtn{
+    color: blue;
+    font-weight: bold;
+    outline: 0;
+    border: 0;
+    background-color: #fff;
+    padding-left: 5px;
+}
+
+
+.top_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.bric {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.bric span {
+    height: 20px;
+    width: 20px;
+    background-color: #643434;
+    border-radius: 7px;
+    margin-right: 3px
+}
+
+.top_div p {
+    font-size: 12px;
+    font-weight: 600
+}
+
+.top_div p a {
+    text-decoration: none;
+    color: blue;
+    margin-left: 2px
+}
+
+.text {
+    margin-top: 25px
+}
+
+.text h6 {
+    margin-top: 10px;
+    color: #858d93
+}
+
+.input_text {
+    position: relative;
+    margin-top: 30px
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #edf1f4;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 10px;
+    outline: 0;
+    caret-color: #a19ffc;
+    color: #211dff
+}
+input[type="password"] {
+    outline: 0;
+    padding-right: 30px;
+}
+.input_text label {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 12px;
+    padding: 0 10px;
+    transition: all 0.5s
+}
+
+
+
+.input_text input:focus~label,
+.input_text input:valid~label {
+    top: -13px;
+    font-weight: 700;
+    color: #a19ffc;
+    left: -5px
+}
+.input_text input:user-invalid~label {
+    top: -13px;
+    font-weight: 700;
+    color: #a19ffc;
+    left: -5px
+}
+.input_text input:invalid {
+    color: red;
+}
+
+
+.input_text i {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #a19ffc
+}
+
+.input_warning {
+    border-bottom: 1px solid red !important
+}
+
+.fa-eye {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #a19ffc
+}
+
+.button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #643434;
+    transition: all 0.5s;
+    cursor: pointer
+}
+
+.button button:hover {
+    background-color: #7a4d4d
+}
+
+.button h6 {
+    margin-top: 10px
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: blue
+}
+#loginBtn:hover, .button a:hover{
+    color: #643434;
+}
+.warning {
+    border-bottom: 1px solid blue !important
+}
